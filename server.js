@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 
-mongoose.connect(process.env.MONGO_URI);
+mongoose.connect('mongodb+srv://unaiskamle:unaisk1989@unaiscluster.r4n5di5.mongodb.net/RentHub?appName=UnaisCluster');
 
 
 app.use('/api/auth', require('./routes/auth.routes'));
